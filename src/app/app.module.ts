@@ -1,16 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { routing } from './app.routes';
+import {ButtonModule} from 'primeng/primeng';
+import {InputTextModule} from 'primeng/primeng';
+import { FormsModule } from '@angular/forms';
+import { AuthGuard } from './auth/auth.guard';
+import {SharedModule} from './shared/shared.module';
+import {CreationModule} from './home/creation/creation.module';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    HomeComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing,
+    SharedModule,
+    CreationModule,
+    FormsModule,
+    ButtonModule,
+    InputTextModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

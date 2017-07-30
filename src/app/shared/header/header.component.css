@@ -1,0 +1,41 @@
+#layout-topbar {
+    background-color: #20272a;
+    display: block;
+    padding: 0;
+    height: 70px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+}
+.topbar-menu {
+    list-style-type: none;
+    float: right;
+    margin: 0 60px 0 0;
+    padding: 0;
+}
+.topbar-menu, .topbar-menu>li, .topbar-menu>li>a {
+    display: inline-block;
+    height: 100%;
+}
+.topbar-menu>li>a {
+    text-decoration: none;
+    color: #fff;
+    transition: background-color .3s;
+    min-width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 70px;
+}
+.topbar-menu>li>a:hover {
+    background-color: #4a4f52
+}
+.logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+}
