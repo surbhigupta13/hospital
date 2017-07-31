@@ -1,5 +1,5 @@
 #layout-topbar {
-    background-color: #20272a;
+    background: url('/assets/images/download.jpeg') no-repeat;
     display: block;
     padding: 0;
     height: 70px;
@@ -10,6 +10,7 @@
     width: 100%;
     z-index: 999999;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    color: #000;
 }
 .topbar-menu {
     list-style-type: none;
@@ -23,7 +24,7 @@
 }
 .topbar-menu>li>a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     transition: background-color .3s;
     min-width: 120px;
     text-align: center;
@@ -35,7 +36,9 @@
 }
 .logo {
     font-size: 24px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    padding: 16px;
+    margin-left: 45px;
+    margin-top: 15px;
+    display: inline-block;
 }

@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { HospitalComponent } from './home/creation/hospital/hospital.component';
 import { MasterComponent } from './home/creation/master/master.component';
 import { UserComponent } from './home/creation/user/user.component';
+import { DevicesComponent } from './home/creation/devices/devices.component';
+import { InfoComponent } from './home/deviceInfo/info/info.component';
+import { WorkorderComponent } from './home/workorder/workorder/workorder.component';
 import { AuthGuard } from './auth/auth.guard';
 
 // Route Configuration
@@ -29,7 +32,10 @@ export const routes: Routes = [
       children: [
         { path: 'hospital', component: HospitalComponent },
         { path: 'master', component: MasterComponent },
-        { path: 'user', component: UserComponent }
+        { path: 'user', component: UserComponent },
+        { path: 'devices', component: DevicesComponent},
+        { path: 'info', component: InfoComponent},
+        { path: 'workorder', component: WorkorderComponent}
     ]
   }
     // Add dog routes form a different file

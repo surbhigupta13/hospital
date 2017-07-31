@@ -20,6 +20,7 @@
     cursor: pointer;
     border-top: 1px solid #e3e9ea;
     box-sizing: border-box;
+    text-decoration: none;
 }
 #layout-sidebar .layout-menu>a i {
     width: 20px;
@@ -31,4 +32,11 @@
     font-size: 16px;
     margin: 0 0 0 30px;
     display: block;
+}
+#menu_input{
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    margin: -16px;
+    padding-left: 30px;
 }
