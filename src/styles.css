@@ -1,4 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     font-family: Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
+    background-color: #fafafa;
+}
+.layout-menu .ui-accordion .ui-accordion-header{
+    border: 1px solid transparent;
+    border-bottom: 1px solid #e6e6e6;
+    color:#333;
+    border-radius: 0px;
+}
+.layout-menu .ui-accordion .ui-accordion-header a{
+    color:#333;
+}
+.layout-menu .ui-accordion .ui-accordion-header.ui-state-active {
+    background-color: #818182;
+    color: #fff;
+}
+a{
+    text-decoration: none;
 }

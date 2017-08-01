@@ -11,6 +11,7 @@
     z-index: 999999;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
     color: #000;
+   background-color: #f7fbff;
 }
 .topbar-menu {
     list-style-type: none;

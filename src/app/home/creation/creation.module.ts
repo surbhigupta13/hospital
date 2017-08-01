@@ -7,6 +7,11 @@ import {DevicesComponent} from './devices/devices.component';
 
 import {ButtonModule} from 'primeng/primeng';
 import {InputTextModule} from 'primeng/primeng';
+import {DropdownModule} from 'primeng/primeng';
+import {PanelModule} from 'primeng/primeng';
+
+import {FormsModule}    from '@angular/forms';
+
 @NgModule({
   declarations: [
    HospitalComponent,
@@ -19,13 +24,17 @@ import {InputTextModule} from 'primeng/primeng';
   imports: [
     BrowserModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    DropdownModule,
+    PanelModule,
+    FormsModule
   ],
   exports:[
    HospitalComponent,
    MasterComponent,
    UserComponent,
    DevicesComponent
+
     
   ]
   

@@ -1,1 +1,79 @@
-<h1>Master data</h1>
+<p-panel >
+    <p-header>
+        Master creation
+    </p-header>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-3">
+            <div class="ui-inputgroup">
+                <label>Masters group Name:</label>
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-4">
+            <p-dropdown [options]="groups" [autoWidth] ="false" [(ngModel)]="master.groupName" placeholder="Select a Group"></p-dropdown>    
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-3">
+            <div class="ui-inputgroup">
+                <label>Code:</label>
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-4">
+            <input type="text" pInputText placeholder="Code">     
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-3">
+            <div class="ui-inputgroup">
+                <label>Description:</label>
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-4">
+            <input type="text" pInputText placeholder="Description">    
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-3">
+            <div class="ui-inputgroup">
+                <label>Sort Order:</label>
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-4">
+            <input type="text" pInputText placeholder="Sort Order">     
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-3">
+            <div class="ui-inputgroup">
+                <label>Active:</label>
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-4">
+            <p-dropdown [options]="groups" [autoWidth] ="false"  [(ngModel)]="master.groupName" placeholder="Select a Group"></p-dropdown>    
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-3">
+            <div class="ui-inputgroup">
+                <label>Short ID:</label>
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-4">
+            <input type="text" pInputText placeholder="Short ID">     
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-3">
+            <div class="ui-inputgroup">
+                <label>Schedule:</label>
+            </div>
+        </div>
+        <div class="ui-g-12 ui-md-4">
+            <p-dropdown [options]="groups" [autoWidth] ="false"  [(ngModel)]="master.groupName" placeholder="Select a Group"></p-dropdown>    
+        </div>
+    </div>
+    <p-footer>
+        <button pButton type="button" icon="fa-check" iconPos="left" class="text-right ui-button-info" label="Save"></button>
+    </p-footer>
+</p-panel>
+
