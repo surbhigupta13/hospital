@@ -1,13 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {InfoComponent} from './info/info.component';
+import {TabViewModule} from 'primeng/primeng';
+import {PanelModule} from 'primeng/primeng';
+import {ButtonModule} from 'primeng/primeng';
+import {InputTextModule} from 'primeng/primeng';
+import {DropdownModule} from 'primeng/primeng';
 @NgModule({
   declarations: [
     InfoComponent
     
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TabViewModule,
+    ButtonModule,
+    InputTextModule,
+    DropdownModule,
+    PanelModule
   ],
   exports:[
    InfoComponent

@@ -1,0 +1,9 @@
+.device_info span{
+    display: inline-block;
+}
+.ui-g-5, .ui-g-7{
+    padding: 0px;
+}
+.label_heading{
+    padding: 0px;
+}
