@@ -7,3 +7,6 @@
 .label_heading{
     padding: 0px;
 }
+label{
+    vertical-align: sub;
+}

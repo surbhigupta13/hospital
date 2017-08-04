@@ -6,6 +6,7 @@ import {PanelModule} from 'primeng/primeng';
 import {ButtonModule} from 'primeng/primeng';
 import {InputTextModule} from 'primeng/primeng';
 import {DropdownModule} from 'primeng/primeng';
+import {CheckboxModule} from 'primeng/primeng';
 @NgModule({
   declarations: [
     InfoComponent
@@ -17,7 +18,8 @@ import {DropdownModule} from 'primeng/primeng';
     ButtonModule,
     InputTextModule,
     DropdownModule,
-    PanelModule
+    PanelModule,
+    CheckboxModule
   ],
   exports:[
    InfoComponent
