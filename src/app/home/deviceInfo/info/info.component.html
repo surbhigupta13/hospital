@@ -143,7 +143,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Cost Centre (Dept)</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Cost Centre"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.costCenter" [autoWidth] ="false"  placeholder="Cost Centre"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -301,7 +301,57 @@
         </div>
     </p-tabPanel>
     <p-tabPanel header="Warranty">
-        Content 2
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Warranty Info</label></span>  
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Device id</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>    
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Risk Score</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>PM Procedure</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="PM Procedure"></p-dropdown> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Vendor</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>    
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Priority</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Responsible Tech</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>    
+                </div>
+            </div>
+        </div>
+        
+
     </p-tabPanel>
     <p-tabPanel header="ePHI & alarm">
         Content 3    
