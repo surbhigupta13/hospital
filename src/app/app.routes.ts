@@ -9,7 +9,7 @@ import { HospitalComponent } from './home/creation/hospital/hospital.component';
 import { MasterComponent } from './home/creation/master/master.component';
 import { UserComponent } from './home/creation/user/user.component';
 import { InfoComponent } from './home/deviceInfo/info/info.component';
-import { WorkorderComponent } from './home/workorder/workorder/workorder.component';
+import { WorkorderComponent } from './home/deviceInfo/workorder/workorder.component';
 import { AuthGuard } from './auth/auth.guard';
 
 // Route Configuration

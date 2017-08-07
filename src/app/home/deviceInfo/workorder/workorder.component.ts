@@ -6,7 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./workorder.component.css']
 })
 export class WorkorderComponent {
+  
   constructor(public router: Router) {}
-    
+  
   
 }
