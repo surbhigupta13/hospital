@@ -312,7 +312,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Device id</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Device id"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -333,7 +333,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Vendor</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Vendor"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -346,17 +346,741 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Responsible Tech</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Responsible Tech"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
-        
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-12 "><p-checkbox name="group1" value="Labour coverage 24X7y" label="Labour coverage 24X7"></p-checkbox></span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>PM Frequency</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>PM Model</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="PM Model"></p-dropdown> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Warranty Start</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Conditional Risk Factor</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Conditional Risk Factor"></p-dropdown> </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>PM Type</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Warranty CM Labor End</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Adjusted Risk Score</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Adjusted Risk Score"></p-dropdown> </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Service Contract</label></span>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Warranty CM Parts End</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Ajusted Priority</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><p-checkbox name="group1" value="Direct Contract" label="Direct Contract"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox name="group1" value="Pass Through Contract" label="Pass Through Contract"></p-checkbox> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Warranty PM Labor End</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Adjusted Frequency</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><p-checkbox name="group1" value="Assumed Contract" label="Assumed Contract"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox name="group1" value="No Contract" label="No Contract"></p-checkbox> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Warranty PM Parts End</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Customer Risk Score</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Contract Cost</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Warranty Notes</label></span>
+                    <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize"></textarea></span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Comments</label></span>
+                    <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize"></textarea> </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Contract Start</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Risk</label></span>                   
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Risk Criteria</label></span>                    
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>PM Scheduling</label></span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Contract End</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Functional Risk</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-12 "><p-checkbox name="group1" value="Equipment on PM" label="Equipment on PM"></p-checkbox></span>
+                    
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Total Cost/Payments</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Physical Risk</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>PM Schedule</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="PM Schedule"></p-dropdown> </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Coverage Hrs/OT</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>CM Requirements</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>PM Proc Type</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="PM Proc Type"></p-dropdown> </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Parts/Labor</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>PO#</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                </div>
+            </div>
+        </div>s
 
     </p-tabPanel>
     <p-tabPanel header="ePHI & alarm">
-        Content 3    
+         <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Info</label></span>                   
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Alarm Info</label></span>
+                </div>
+            </div>
+        </div>  
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Has ePHI</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>OEM Tube Model</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><p-checkbox name="group1" value="Device has Alarm" label="Device has Alarm"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox name="group1" value="Generate Multi Alarm" label="Generate Multi Alarm"></p-checkbox> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Integ</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>OEM Tube Serial#</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Alarm Priority</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Alarm Priority"></p-dropdown> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Integ Probability</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Max KVP</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Risk Patient</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Risk Patient"></p-dropdown> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Integ Score</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Last Replace</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Alarm Fatigue</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Alarm Fatigue"></p-dropdown> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Avail Criticality</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>OEM Img PN#</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Potential for Harm</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Potential for Harm"></p-dropdown> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Avail Probability</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Manufacturer</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Best Practices</label></span>
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Best Practices"></p-dropdown> </span>    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "></span>
+                    <span class="ui-g-7"><p-checkbox name="group1" value="ePHI Avail Score" label="ePHI Avail Score"></p-checkbox> </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Model</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Conf Criticality</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Serial#</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Conf</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>System Name</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Conf Score</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Interface Type</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>ePHI Total Risk</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Daylight savings time Auto</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Customer PHI</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>State Reg#</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
     </p-tabPanel>
     <p-tabPanel header="N/W info">
-        Content 3    
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7"><label>Network info</label></span>                    
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7"><label>Radiology System Info</label></span>  
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <span class="ui-g-7"><label>Antivirus Info</label></span>  
+            </div>
+        </div> 
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Interface Type</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>AE Title</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7 "><p-checkbox name="group1" value="AV Required" label="AV Required"></p-checkbox></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7 "><p-checkbox name="group1" value="Daylight savings time Auto" label="Daylight savings time Auto"></p-checkbox></span>
+                      
+                                  
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>AE Port Number</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                        
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7 "><p-checkbox name="group1" value="AV Installed" label="AV Installed"></p-checkbox></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>MAC Address</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                                  
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7 "><p-checkbox name="group1" value=" Work List" label=" Work List"></p-checkbox></span>
+                 
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>AV Type</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>IP Address</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                                  
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7 "><label>Drive Imaging</label></span>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Firewall</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Subnet Mask</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                                  
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>File Locationg</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Comments</label></span>
+                    <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize"></textarea> </span> 
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Default Gateway</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                                  
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Name</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Domain Name</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                                  
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Date</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>DNS Server</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                                  
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7 "><label>Backup Info</label></span>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7"><p-checkbox name="group1" value=" Uses DHCP" label=" Uses DHCP"></p-checkbox></span>
+                                 
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7 "><p-checkbox name="group1" value=" Backup Scheduled" label="Backup Scheduled"></p-checkbox></span>
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-7"><p-checkbox name="group1" value="DNS Required" label="DNS Required"></p-checkbox></span>
+                                 
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Backup Type</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                </div>
+            </div>
+            <div class="ui-g-12 ui-md-4">
+                
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>Operating System</label></span>        
+                </div>
+            </div>
+            
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>OS</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                </div>
+            </div>
+        </div>
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-4">
+                <div>
+                    <span class="ui-g-5 "><label>OS Version</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                </div>
+            </div>
+        </div>
     </p-tabPanel>
 </p-tabView>
