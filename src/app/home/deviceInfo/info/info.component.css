@@ -6,7 +6,12 @@
 }
 .label_heading{
     padding: 0px;
+    font-weight: bold;
 }
 label{
-    vertical-align: sub;
+    vertical-align: -webkit-baseline-middle;
+    font-size: 14px;
+}
+p-checkbox{
+    font-size: 14px;
 }

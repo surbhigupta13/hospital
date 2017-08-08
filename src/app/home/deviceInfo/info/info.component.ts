@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { costCenter, equipmentStatus,  deptcheck, equiptechLevel, serviceModel, equipPhysicalLevel, equipmentOwner, purchaseVendor} from '../dropdown/dropdown.data';
+import { equipmentStatus,  deptcheck, equiptechLevel, serviceModel, equipPhysicalLevel, equipmentOwner, purchaseVendor, 
+  Conditionalriskfactor, AdjustedRiskScore, PMSchedule, PMProcType, PMModel, alarmPriority, RiskPatient, AlarmFatigue,
+PotentialforHarm, BestPractices} from '../dropdown/dropdown.data';
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
@@ -8,14 +10,24 @@ import { costCenter, equipmentStatus,  deptcheck, equiptechLevel, serviceModel, 
 })
 export class InfoComponent implements OnInit{
   public dropdown = {
-    costCenter: costCenter,
+    
     equipmentStatus: equipmentStatus,
     deptcheck: deptcheck,
     equiptechLevel: equiptechLevel,
     serviceModel: serviceModel,
     equipPhysicalLevel: equipPhysicalLevel,
     equipmentOwner: equipmentOwner,
-    purchaseVendor: purchaseVendor
+    purchaseVendor: purchaseVendor,
+    Conditionalriskfactor: Conditionalriskfactor,
+    AdjustedRiskScore: AdjustedRiskScore,
+    PMSchedule: PMSchedule,
+    PMProcType:  PMProcType,
+    PMModel: PMModel,
+    alarmPriority: alarmPriority,
+    RiskPatient: RiskPatient,
+    AlarmFatigue: AlarmFatigue,
+    PotentialforHarm: PotentialforHarm,
+    BestPractices: BestPractices
   }
   public info = {
 

@@ -143,7 +143,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Cost Centre (Dept)</label></span>
-                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.costCenter" [autoWidth] ="false"  placeholder="Cost Centre"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Cost Centre"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -304,7 +304,7 @@
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>Warranty Info</label></span>  
+                    <span class="ui-g-12 label_heading"><label>Warranty Info</label></span>  
                 </div>
             </div>
         </div>
@@ -353,7 +353,7 @@
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-12 "><p-checkbox name="group1" value="Labour coverage 24X7y" label="Labour coverage 24X7"></p-checkbox></span>
+                    <span class="ui-g-7 "><p-checkbox name="group1" value="Labour coverage 24X7y" label="Labour coverage 24X7"></p-checkbox></span>
                         
                 </div>
             </div>
@@ -367,7 +367,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Model</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="PM Model"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMModel" [autoWidth] ="false"  placeholder="PM Model"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -381,7 +381,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Conditional Risk Factor</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Conditional Risk Factor"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.Conditionalriskfactor" [autoWidth] ="false"  placeholder="Conditional Risk Factor"></p-dropdown> </span>
                         
                 </div>
             </div>
@@ -402,13 +402,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Adjusted Risk Score</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Adjusted Risk Score"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.AdjustedRiskScore" [autoWidth] ="false"  placeholder="Adjusted Risk Score"></p-dropdown> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>Service Contract</label></span>
+                    <span class="ui-g-12 label_heading"><label>Service Contract</label></span>
                 </div>
             </div>
         </div>
@@ -499,19 +499,19 @@
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>Risk</label></span>                   
+                    <span class="ui-g-12 label_heading"><label>Risk</label></span>                   
                 </div>
             </div>
         </div>
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>Risk Criteria</label></span>                    
+                    <span class="ui-g-12 label_heading"><label>Risk Criteria</label></span>                    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>PM Scheduling</label></span>
+                    <span class="ui-g-12 label_heading"><label>PM Scheduling</label></span>
                         
                 </div>
             </div>
@@ -531,7 +531,7 @@
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-12 "><p-checkbox name="group1" value="Equipment on PM" label="Equipment on PM"></p-checkbox></span>
+                    <span class="ui-g-7 "><p-checkbox name="group1" value="Equipment on PM" label="Equipment on PM"></p-checkbox></span>
                     
                 </div>
             </div>
@@ -552,7 +552,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Schedule</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="PM Schedule"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMSchedule" [autoWidth] ="false"  placeholder="PM Schedule"></p-dropdown> </span>
                         
                 </div>
             </div>
@@ -573,7 +573,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Proc Type</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="PM Proc Type"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMProcType" [autoWidth] ="false"  placeholder="PM Proc Type"></p-dropdown> </span>
                         
                 </div>
             </div>
@@ -597,14 +597,14 @@
                     <span class="ui-g-7"><input type="text" pInputText > </span>   
                 </div>
             </div>
-        </div>s
+        </div>
 
     </p-tabPanel>
     <p-tabPanel header="ePHI & alarm">
          <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>ePHI Info</label></span>                   
+                    <span class="ui-g-12 label_heading"><label>ePHI Info</label></span>                   
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -612,7 +612,7 @@
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>Alarm Info</label></span>
+                    <span class="ui-g-12 label_heading"><label>Alarm Info</label></span>
                 </div>
             </div>
         </div>  
@@ -654,7 +654,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Alarm Priority</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Alarm Priority"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.alarmPriority" [autoWidth] ="false"  placeholder="Alarm Priority"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -675,7 +675,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Risk Patient</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Risk Patient"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.RiskPatient" [autoWidth] ="false"  placeholder="Risk Patient"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -696,7 +696,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Alarm Fatigue</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Alarm Fatigue"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.AlarmFatigue" [autoWidth] ="false"  placeholder="Alarm Fatigue"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -717,7 +717,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Potential for Harm</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Potential for Harm"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PotentialforHarm" [autoWidth] ="false"  placeholder="Potential for Harm"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -738,7 +738,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Best Practices</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Best Practices"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.BestPractices" [autoWidth] ="false"  placeholder="Best Practices"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -855,16 +855,16 @@
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7"><label>Network info</label></span>                    
+                    <span class="ui-g-12 label_heading"><label>Network info</label></span>                    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7"><label>Radiology System Info</label></span>  
+                    <span class="ui-g-12 label_heading"><label>Radiology System Info</label></span>  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
-                <span class="ui-g-7"><label>Antivirus Info</label></span>  
+                <span class="ui-g-12 label_heading"><label>Antivirus Info</label></span>  
             </div>
         </div> 
         <div class="ui-g ui-fluid device_info">
@@ -1018,7 +1018,7 @@
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7 "><label>Backup Info</label></span>
+                    <span class="ui-g-12 label_heading"><label>Backup Info</label></span>
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -1061,7 +1061,7 @@
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>Operating System</label></span>        
+                    <span class="ui-g-12 label_heading"><label>Operating System</label></span>        
                 </div>
             </div>
             
