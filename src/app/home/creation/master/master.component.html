@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
-            <p-dropdown [options]="master.groupName" [autoWidth] ="false" ></p-dropdown>    
+            <p-dropdown [options]="master.groupName" [autoWidth] ="false" [(ngModel)]="master.groupName"></p-dropdown>    
         </div>
     </div>
     <div class="ui-g ui-fluid">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
-            <input type="text" pInputText placeholder="Code">     
+            <input type="text" pInputText placeholder="Code" [(ngModel)]="master.code">     
         </div>
     </div>
     <div class="ui-g ui-fluid">
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
-            <input type="text" pInputText placeholder="Description">    
+            <input type="text" pInputText placeholder="Description" [(ngModel)]="master.description">    
         </div>
     </div>
     <div class="ui-g ui-fluid">
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
-            <input type="text" pInputText placeholder="Sort Order">     
+            <input type="text" pInputText placeholder="Sort Order" [(ngModel)]="master.sortOrder">     
         </div>
     </div>
     <div class="ui-g ui-fluid">
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
-            <p-dropdown [options]="master.active" [autoWidth] ="false"  [(ngModel)]="master.groupName" ></p-dropdown>    
+            <p-dropdown [options]="master.active" [autoWidth] ="false"  [(ngModel)]="master.active" ></p-dropdown>    
         </div>
     </div>
     <div class="ui-g ui-fluid">
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
-            <input type="text" pInputText placeholder="Short ID">     
+            <input type="text" pInputText placeholder="Short ID" [(ngModel)]="master.shortId">     
         </div>
     </div>
     <div class="ui-g ui-fluid">
@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class="ui-g-12 ui-md-4">
-            <p-dropdown [options]="groups" [autoWidth] ="false"  ></p-dropdown>    
+            <p-dropdown [options]="groups" [autoWidth] ="false"  [(ngModel)]="master.schedule"></p-dropdown>    
         </div>
     </div>
     <p-footer>

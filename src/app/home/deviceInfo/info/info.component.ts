@@ -10,7 +10,6 @@ PotentialforHarm, BestPractices} from '../dropdown/dropdown.data';
 })
 export class InfoComponent implements OnInit{
   public dropdown = {
-    
     equipmentStatus: equipmentStatus,
     deptcheck: deptcheck,
     equiptechLevel: equiptechLevel,
@@ -29,9 +28,20 @@ export class InfoComponent implements OnInit{
     PotentialforHarm: PotentialforHarm,
     BestPractices: BestPractices
   }
-  public info = {
+  public device ={
+   info:{
 
-  }
+   },
+   warranty:{
+
+   },
+   epi:{
+
+   },
+   nwInfo:{
+
+   }
+}
   constructor(public router: Router) {}
   ngOnInit () {
 

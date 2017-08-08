@@ -11,8 +11,6 @@ import {groupName, active} from './master.interface';
 })
 export class MasterComponent implements OnInit{
 
-    
-
   master:master = {
     groupName:groupName,
     code:'',
