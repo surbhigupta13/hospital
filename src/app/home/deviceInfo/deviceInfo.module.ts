@@ -9,6 +9,7 @@ import {InputTextModule} from 'primeng/primeng';
 import {DropdownModule} from 'primeng/primeng';
 import {CheckboxModule} from 'primeng/primeng';
 import {InputTextareaModule} from 'primeng/primeng';
+import {CalendarModule} from 'primeng/primeng';
 @NgModule({
   declarations: [
     InfoComponent,
@@ -23,6 +24,7 @@ import {InputTextareaModule} from 'primeng/primeng';
     DropdownModule,
     PanelModule,
     CheckboxModule,
+    CalendarModule,
     InputTextareaModule
   ],
   exports:[
