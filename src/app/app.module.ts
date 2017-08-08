@@ -11,7 +11,6 @@ import { AuthGuard } from './auth/auth.guard';
 import {SharedModule} from './shared/shared.module';
 import {CreationModule} from './home/creation/creation.module';
 import {DeviceInfoModule} from './home/deviceInfo/deviceInfo.module';
-import {WorkorderModule} from './home/workorder/workorder.module';
 
 
 @NgModule({
@@ -27,7 +26,6 @@ import {WorkorderModule} from './home/workorder/workorder.module';
     SharedModule,
     CreationModule,
     DeviceInfoModule,
-    WorkorderModule,
     FormsModule,
     ButtonModule,
     InputTextModule

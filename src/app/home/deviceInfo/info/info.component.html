@@ -36,7 +36,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Equipment status</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Select a Group"></p-dropdown>  </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipmentStatus" [autoWidth] ="false"  placeholder="Equipment status"></p-dropdown>  </span>    
                 </div>
             </div>
         </div>
@@ -94,8 +94,8 @@
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>Date Retired</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Dept Check"></p-dropdown>  </span>    
+                    <span class="ui-g-5 "><label>Dept Check</label></span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.deptcheck" [autoWidth] ="false"  placeholder="Dept Check"></p-dropdown>  </span>    
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Eq tech level</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Equip Tech Level"></p-dropdown>  </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equiptechLevel" [autoWidth] ="false"  placeholder="Equip Tech Level"></p-dropdown>  </span>    
                 </div>
             </div>
         </div>
@@ -129,13 +129,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Service Model</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Service Model"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.serviceModel" [autoWidth] ="false"  placeholder="Service Model"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Eq physical cond.</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Equip Physical cond"></p-dropdown>  </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipPhysicalLevel" [autoWidth] ="false"  placeholder="Equip Physical cond"></p-dropdown>  </span>    
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Equipment Owner</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Equipment Owner"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipmentOwner" [autoWidth] ="false"  placeholder="Equipment Owner"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -210,7 +210,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Purchase Vendor</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.purchaseVendor" [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>
                         
                 </div>
             </div>
