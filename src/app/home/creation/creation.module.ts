@@ -9,7 +9,7 @@ import {InputTextModule} from 'primeng/primeng';
 import {DropdownModule} from 'primeng/primeng';
 import {PanelModule} from 'primeng/primeng';
 
-import {FormsModule}    from '@angular/forms';
+import {FormsModule,ReactiveFormsModule}    from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import {FormsModule}    from '@angular/forms';
     InputTextModule,
     DropdownModule,
     PanelModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[
    HospitalComponent,
