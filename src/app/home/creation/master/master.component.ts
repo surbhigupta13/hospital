@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import {SelectItem} from 'primeng/primeng';
 import {NgModule}  from '@angular/core';
 import {master} from './master.interface';
-import {groupName, active} from './master.interface';
+import {groupName, active, schedule} from './master.interface';
 @Component({
   selector: 'app-master',
   templateUrl: './master.component.html',
@@ -12,13 +12,15 @@ import {groupName, active} from './master.interface';
 export class MasterComponent implements OnInit{
   public dropdown = {
     groupName: groupName,
+    active:active,
+    schedule:schedule,
   }
   master:master = {
     groupName:'',
     code:'',
     description:'',
     sortOrder:null,
-    active:active,
+    active:'',
     shortId:null,
     schedule:''
   };

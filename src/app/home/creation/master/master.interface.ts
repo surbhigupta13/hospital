@@ -28,3 +28,7 @@ export const active =[
     {label:'True', value:null},
     {label:'False', value:null},
   ]
+  export const schedule =[
+    {label:'True', value:null},
+    {label:'False', value:null},
+  ]
