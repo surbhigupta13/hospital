@@ -1,13 +1,13 @@
 <div id="layout-topbar">
-    <a class="logo" href="#/">
+    <a class="logo" [routerLink]= "['/home']">
        Hospital Information Managment Solutions
     </a>
     <ul  class="topbar-menu">
             <li  class="ng-tns-c0-0">
-                <a  class="ng-tns-c0-0" >Home</a>
+                <a  class="ng-tns-c0-0 pointer" [routerLink]= "['/home']">Home</a>
             </li>
             <li  class="ng-tns-c0-0">
-                <a  class="ng-tns-c0-0" (click) = "logout()">Logout</a>
+                <a  class="ng-tns-c0-0 pointer" (click) = "logout()">Logout</a>
             </li>
         </ul>
 </div>

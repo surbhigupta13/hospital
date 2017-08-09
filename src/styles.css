@@ -19,3 +19,9 @@ body{
 a{
     text-decoration: none;
 }
+.p0{
+    padding: 0px !important;
+}
+.pointer {
+    cursor: pointer;
+}
