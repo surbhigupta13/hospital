@@ -6,13 +6,13 @@
     <div class="ui-g-12 ui-md-6">
         <div class="ui-inputgroup">
             <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-            <input type="text" pInputText placeholder="Username">         
+            <input type="text" pInputText placeholder="Username" [(ngModel)]="user.userName">         
         </div>
     </div>
     <div class="ui-g-12 ui-md-6">
         <div class="ui-inputgroup">
-            <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
-            <input type="password" pInputText placeholder="Password">         
+            <span class="ui-inputgroup-addon"><i class="fa fa-lock"></i></span>
+            <input type="password" pPassword placeholder="Password" [(ngModel)]="user.password"/>       
         </div>
     </div>
 </div>

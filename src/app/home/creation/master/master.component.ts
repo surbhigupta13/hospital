@@ -10,9 +10,11 @@ import {groupName, active} from './master.interface';
   styleUrls: ['./master.component.css']
 })
 export class MasterComponent implements OnInit{
-
+  public dropdown = {
+    groupName: groupName,
+  }
   master:master = {
-    groupName:groupName,
+    groupName:'',
     code:'',
     description:'',
     sortOrder:null,

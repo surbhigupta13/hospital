@@ -6,6 +6,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent {
+  public user={
+    userName:'',
+    password:''
+  }
   constructor(public router: Router) {}
     
   

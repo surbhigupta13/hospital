@@ -8,7 +8,7 @@ import {ButtonModule} from 'primeng/primeng';
 import {InputTextModule} from 'primeng/primeng';
 import {DropdownModule} from 'primeng/primeng';
 import {PanelModule} from 'primeng/primeng';
-
+import {PasswordModule} from 'primeng/primeng';
 import {FormsModule,ReactiveFormsModule}    from '@angular/forms';
 
 @NgModule({
@@ -26,6 +26,7 @@ import {FormsModule,ReactiveFormsModule}    from '@angular/forms';
     DropdownModule,
     PanelModule,
     FormsModule,
+    PasswordModule,
     ReactiveFormsModule
   ],
   exports:[

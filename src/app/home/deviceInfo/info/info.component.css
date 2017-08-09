@@ -15,3 +15,8 @@ label{
 p-checkbox{
     font-size: 14px;
 }
+.infoFooter{
+    padding: 16px;
+    border-top:1px solid #ededed;
+    display: block;
+}
