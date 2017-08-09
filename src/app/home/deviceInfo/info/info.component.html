@@ -4,19 +4,19 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Control#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.control"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Serial#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.serial"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>End of support</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>    
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.info.endOfSupport"></p-calendar> </span>    
                 </div>
             </div>
         </div>
@@ -24,19 +24,19 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Entity</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.entity"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Software version</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.softwareVersion"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Equipment status</label></span>
-                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipmentStatus" [autoWidth] ="false"  placeholder="Equipment status"></p-dropdown>  </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipmentStatus" [(ngModel)]="device.info.equipmentStatus" [autoWidth] ="false"  placeholder="Equipment status"></p-dropdown>  </span>    
                 </div>
             </div>
         </div>
@@ -44,19 +44,19 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Entity group</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.entityGroup"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>UMDNS</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.UMDNS"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Date Retired</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>    
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.info.dateRetired"></p-calendar> </span>    
                 </div>
             </div>
         </div>
@@ -64,13 +64,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Vendor System ID</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.vendorSystemID"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Building</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.building"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -83,19 +83,19 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Main Control#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.mainControl"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Room</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.room"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Dept Check</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.deptcheck" [autoWidth] ="false"  placeholder="Dept Check"></p-dropdown>  </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.deptcheck" [(ngModel)]="device.info.deptCheck" [autoWidth] ="false"  placeholder="Dept Check"></p-dropdown>  </span>    
                 </div>
             </div>
         </div>
@@ -103,19 +103,19 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Facility Asset#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.facilityAsset"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Location</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.location"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Eq tech level</label></span>
-                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equiptechLevel" [autoWidth] ="false"  placeholder="Equip Tech Level"></p-dropdown>  </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equiptechLevel" [(ngModel)]="device.info.eqtechlevel" [autoWidth] ="false"  placeholder="Equip Tech Level"></p-dropdown>  </span>    
                 </div>
             </div>
         </div>
@@ -123,19 +123,19 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Prior Control#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.priorControl"> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Service Model</label></span>
-                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.serviceModel" [autoWidth] ="false"  placeholder="Service Model"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.serviceModel" [(ngModel)]="device.info.serviceModel" [autoWidth] ="false"  placeholder="Service Model"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Eq physical cond.</label></span>
-                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipPhysicalLevel" [autoWidth] ="false"  placeholder="Equip Physical cond"></p-dropdown>  </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipPhysicalLevel" [(ngModel)]="device.info.eqPhysicalcond" [autoWidth] ="false"  placeholder="Equip Physical cond"></p-dropdown>  </span>    
                 </div>
             </div>
         </div>
@@ -143,18 +143,18 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Cost Centre (Dept)</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Cost Centre"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Cost Centre" [(ngModel)]="device.info.costCentre"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Equipment Owner</label></span>
-                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipmentOwner" [autoWidth] ="false"  placeholder="Equipment Owner"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [options]="dropdown.equipmentOwner" [(ngModel)]="device.info.equipmentOwner" [autoWidth] ="false"  placeholder="Equipment Owner"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><p-checkbox name="group1" value="Has battery" label="Has battery"></p-checkbox></span>
+                    <span class="ui-g-5 "><p-checkbox  value="Has battery" label="Has battery" [(ngModel)]="device.info.hasbattery"></p-checkbox></span>
                       
                 </div>
             </div>
@@ -163,7 +163,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Cost Centre (Exp)</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Cost Centre"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false" [(ngModel)]="device.info.costCentreExp" placeholder="Cost Centre"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -175,7 +175,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Battery#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.battery"> </span>    
                 </div>
             </div>
         </div>
@@ -183,20 +183,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Manufacturer</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Manufacturer"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false" [(ngModel)]="device.info.manufacturer"  placeholder="Manufacturer"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Purchase Date</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.info.purchaseDate"></p-calendar> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Battery last change</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>    
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.info.batteryLastChange"></p-calendar> </span>    
                 </div>
             </div>
         </div>
@@ -204,20 +204,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Alt Manufacturer</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>  
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.AltManufacturer"> </span>  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Purchase Vendor</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.purchaseVendor" [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.purchaseVendor" [(ngModel)]="device.info.purchaseVendor" [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Battery next change</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>    
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.info.batteryNextchange"></p-calendar> </span>    
                 </div>
             </div>
         </div>
@@ -225,20 +225,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Device Type / Desc</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Purchase Vendor"></p-dropdown> </span>  
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false" [(ngModel)]="device.info.deviceType" placeholder="Purchase Vendor"></p-dropdown> </span>  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Purchase cost</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.purchasecost"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><p-checkbox name="group1" value="Has battery" label="Has Service Manual"></p-checkbox></span>
-                    <span class="ui-g-7"><p-checkbox name="group1" value="Has battery" label="Has Operator Manual"></p-checkbox> </span>    
+                    <span class="ui-g-5 "><p-checkbox  value="Has Service Manual" label="Has Service Manual" [(ngModel)]="device.info.hasServiceManual"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox  value="Has Operator Manual" label="Has Operator Manual" [(ngModel)]="device.info.hasOperatorManual"></p-checkbox> </span>    
                 </div>
             </div>
         </div>
@@ -246,20 +246,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Alt Description</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>  
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.AltDescription"> </span>  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PO Number</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.PONumber"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Comments</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.comments"> </span>    
                 </div>
             </div>
         </div>
@@ -267,13 +267,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Common Name</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>  
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.commonName" > </span>  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Mfg Date</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.info.MfgDate"></p-calendar> </span>
                         
                 </div>
             </div>
@@ -285,13 +285,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Model</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>  
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.info.model"> </span>  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Date in Service</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.info.dateinService"></p-calendar> </span>
                         
                 </div>
             </div>
@@ -312,20 +312,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Device id</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Device id"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false" [(ngModel)]="device.warranty.deviceid" placeholder="Device id"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Risk Score</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.riskScore"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Procedure</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="PM Procedure"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"[(ngModel)]="device.warranty.PMProcedure"  placeholder="PM Procedure"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -333,41 +333,41 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Vendor</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Vendor"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false" [(ngModel)]="device.warranty.vendor" placeholder="Vendor"></p-dropdown> </span>    
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Priority</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.priority"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Responsible Tech</label></span>
-                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false"  placeholder="Responsible Tech"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown  [autoWidth] ="false" [(ngModel)]="device.warranty.responsibleTech" placeholder="Responsible Tech"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7 "><p-checkbox name="group1" value="Labour coverage 24X7y" label="Labour coverage 24X7"></p-checkbox></span>
+                    <span class="ui-g-7 "><p-checkbox [(ngModel)]="device.warranty.labourCoverage" value="Labour coverage 24X7" label="Labour coverage 24X7"></p-checkbox></span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Frequency</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.PMFrequency"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Model</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMModel" [autoWidth] ="false"  placeholder="PM Model"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMModel" [(ngModel)]="device.warranty.PMModel" [autoWidth] ="false"  placeholder="PM Model"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -375,20 +375,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Warranty Start</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>                      
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.warranty.warrantyStart"></p-calendar> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Conditional Risk Factor</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.Conditionalriskfactor" [autoWidth] ="false"  placeholder="Conditional Risk Factor"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.Conditionalriskfactor" [(ngModel)]="device.warranty.conditionalRiskFactor" [autoWidth] ="false"  placeholder="Conditional Risk Factor"></p-dropdown> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Type</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.PMType"> </span>    
                 </div>
             </div>
         </div>
@@ -396,13 +396,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Warranty CM Labor End</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>                      
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.warranty.warrantyCMLaborEnd"></p-calendar> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Adjusted Risk Score</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.AdjustedRiskScore" [autoWidth] ="false"  placeholder="Adjusted Risk Score"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.AdjustedRiskScore" [(ngModel)]="device.warranty.adjustedRiskScore" [autoWidth] ="false"  placeholder="Adjusted Risk Score"></p-dropdown> </span>
                         
                 </div>
             </div>
@@ -416,20 +416,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Warranty CM Parts End</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>                      
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.warranty.warrantyCMPartsEnd"></p-calendar> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Ajusted Priority</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.ajustedPriority"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><p-checkbox name="group1" value="Direct Contract" label="Direct Contract"></p-checkbox></span>
-                    <span class="ui-g-7"><p-checkbox name="group1" value="Pass Through Contract" label="Pass Through Contract"></p-checkbox> </span>    
+                    <span class="ui-g-5 "><p-checkbox [(ngModel)]="device.warranty.directContract" value="Direct Contract" label="Direct Contract"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox  [(ngModel)]="device.warranty.passThroughContract" value="Pass Through Contract" label="Pass Through Contract"></p-checkbox> </span>    
                 </div>
             </div>
         </div>
@@ -437,20 +437,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Warranty PM Labor End</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>                      
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.warranty.warrantyPMLaborEnd"></p-calendar> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Adjusted Frequency</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.adjustedFrequency"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><p-checkbox name="group1" value="Assumed Contract" label="Assumed Contract"></p-checkbox></span>
-                    <span class="ui-g-7"><p-checkbox name="group1" value="No Contract" label="No Contract"></p-checkbox> </span>    
+                    <span class="ui-g-5 "><p-checkbox  [(ngModel)]="device.warranty.assumedContrac" value="Assumed Contract" label="Assumed Contract"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox [(ngModel)]="device.warranty.noContract" value="No Contract" label="No Contract"></p-checkbox> </span>    
                 </div>
             </div>
         </div>
@@ -458,20 +458,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Warranty PM Parts End</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>                      
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.warranty.warrantyPMPartsEnd"></p-calendar> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Customer Risk Score</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.customerRiskScore"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Contract Cost</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.contractCost"> </span>   
                 </div>
             </div>
         </div>
@@ -479,20 +479,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Warranty Notes</label></span>
-                    <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize"></textarea></span>                      
+                    <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize" [(ngModel)]="device.warranty.warrantyNotes"></textarea></span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Comments</label></span>
-                    <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize"></textarea> </span>
+                    <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize" [(ngModel)]="device.warranty.comments"></textarea> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Contract Start</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>   
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.warranty.contractStart"></p-calendar> </span>   
                 </div>
             </div>
         </div>
@@ -518,7 +518,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Contract End</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>   
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.warranty.contractEnd"></p-calendar> </span>   
                 </div>
             </div>
         </div>
@@ -526,19 +526,19 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Functional Risk</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.functionalRisk"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7 "><p-checkbox name="group1" value="Equipment on PM" label="Equipment on PM"></p-checkbox></span>
+                    <span class="ui-g-7 "><p-checkbox [(ngModel)]="device.warranty.equipmentonPM" value="Equipment on PM" label="Equipment on PM"></p-checkbox></span>
                     
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Total Cost/Payments</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.totalCost"> </span>   
                 </div>
             </div>
         </div>
@@ -546,20 +546,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Physical Risk</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.physicalRisk"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Schedule</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMSchedule" [autoWidth] ="false"  placeholder="PM Schedule"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMSchedule" [(ngModel)]="device.warranty.PMSchedule" [autoWidth] ="false"  placeholder="PM Schedule"></p-dropdown> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Coverage Hrs/OT</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.coverageHrs"> </span>   
                 </div>
             </div>
         </div>
@@ -567,20 +567,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>CM Requirements</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.CMRequirements"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PM Proc Type</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMProcType" [autoWidth] ="false"  placeholder="PM Proc Type"></p-dropdown> </span>
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PMProcType" [(ngModel)]="device.warranty.PMProcType" [autoWidth] ="false"  placeholder="PM Proc Type"></p-dropdown> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Parts/Labor</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.parts"> </span>   
                 </div>
             </div>
         </div>
@@ -594,7 +594,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>PO#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>   
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.warranty.PO"> </span>   
                 </div>
             </div>
         </div>
@@ -620,20 +620,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Has ePHI</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.hasePHI"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>OEM Tube Model</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.OEMTubeModel"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><p-checkbox name="group1" value="Device has Alarm" label="Device has Alarm"></p-checkbox></span>
-                    <span class="ui-g-7"><p-checkbox name="group1" value="Generate Multi Alarm" label="Generate Multi Alarm"></p-checkbox> </span>    
+                    <span class="ui-g-5 "><p-checkbox [(ngModel)]="device.ephi.devicehasAlarm" value="Device has Alarm" label="Device has Alarm"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox [(ngModel)]="device.ephi.generateMultiAlarm" value="Generate Multi Alarm" label="Generate Multi Alarm"></p-checkbox> </span>    
                 </div>
             </div>
         </div>
@@ -641,20 +641,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Integ</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHIInteg"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>OEM Tube Serial#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.OEMTubeSerial"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Alarm Priority</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.alarmPriority" [autoWidth] ="false"  placeholder="Alarm Priority"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.alarmPriority" [(ngModel)]="device.ephi.alarmPriority" [autoWidth] ="false"  placeholder="Alarm Priority"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -662,20 +662,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Integ Probability</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHIIntegProbability"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Max KVP</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.MaxKV"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Risk Patient</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.RiskPatient" [autoWidth] ="false"  placeholder="Risk Patient"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.RiskPatient" [(ngModel)]="device.ephi.riskPatient" [autoWidth] ="false"  placeholder="Risk Patient"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -683,20 +683,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Integ Score</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHIIntegScore"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Last Replace</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.ephi.lastReplace"></p-calendar> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Alarm Fatigue</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.AlarmFatigue" [autoWidth] ="false"  placeholder="Alarm Fatigue"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.AlarmFatigue" [(ngModel)]="device.ephi.alarmFatigue" [autoWidth] ="false"  placeholder="Alarm Fatigue"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -704,20 +704,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Avail Criticality</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHIAvailCriticality"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>OEM Img PN#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.OEMImgPN"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Potential for Harm</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PotentialforHarm" [autoWidth] ="false"  placeholder="Potential for Harm"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.PotentialforHarm" [(ngModel)]="device.ephi.potentialforHarm" [autoWidth] ="false"  placeholder="Potential for Harm"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -725,20 +725,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Avail Probability</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHIAvailProbability"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Manufacturer</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.manufacturer"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Best Practices</label></span>
-                    <span class="ui-g-7"><p-dropdown [options]="dropdown.BestPractices" [autoWidth] ="false"  placeholder="Best Practices"></p-dropdown> </span>    
+                    <span class="ui-g-7"><p-dropdown [options]="dropdown.BestPractices" [(ngModel)]="device.ephi.bestPractices" [autoWidth] ="false"  placeholder="Best Practices"></p-dropdown> </span>    
                 </div>
             </div>
         </div>
@@ -746,13 +746,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "></span>
-                    <span class="ui-g-7"><p-checkbox name="group1" value="ePHI Avail Score" label="ePHI Avail Score"></p-checkbox> </span>                      
+                    <span class="ui-g-7"><p-checkbox [(ngModel)]="device.ephi.ePHIAvailScore" value="ePHI Avail Score" label="ePHI Avail Score"></p-checkbox> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Model</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.model"> </span>
                         
                 </div>
             </div>
@@ -764,13 +764,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Conf Criticality</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHIConfCriticality"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Serial#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.serial"> </span>
                         
                 </div>
             </div>
@@ -782,13 +782,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Conf</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHIConf"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>System Name</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.systemName"> </span>
                         
                 </div>
             </div>
@@ -800,13 +800,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Conf Score</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHIConfScore"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Interface Type</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.interfaceType"> </span>
                         
                 </div>
             </div>
@@ -818,13 +818,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>ePHI Total Risk</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.ePHITotalRisk"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Daylight savings time Auto</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.daylightsavings"> </span>
                         
                 </div>
             </div>
@@ -836,13 +836,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Customer PHI</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.customerPHI"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>State Reg#</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.ephi.stateReg"> </span>
                         
                 </div>
             </div>
@@ -871,19 +871,19 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Interface Type</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>                      
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.interfaceType"> </span>                      
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>AE Title</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.AETitle"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7 "><p-checkbox name="group1" value="AV Required" label="AV Required"></p-checkbox></span>
+                    <span class="ui-g-7 "><p-checkbox  [(ngModel)]="device.nwInfo.AVRequired" value="AV Required" label="AV Required"></p-checkbox></span>
                     
                 </div>
             </div>
@@ -891,7 +891,7 @@
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7 "><p-checkbox name="group1" value="Daylight savings time Auto" label="Daylight savings time Auto"></p-checkbox></span>
+                    <span class="ui-g-7 "><p-checkbox [(ngModel)]="device.nwInfo.daylightsavingstime" value="Daylight savings time Auto" label="Daylight savings time Auto"></p-checkbox></span>
                       
                                   
                 </div>
@@ -899,13 +899,13 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>AE Port Number</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.AEPortNumber"> </span>
                         
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7 "><p-checkbox name="group1" value="AV Installed" label="AV Installed"></p-checkbox></span>
+                    <span class="ui-g-7 "><p-checkbox [(ngModel)]="device.nwInfo.AVInstalled" value="AV Installed" label="AV Installed"></p-checkbox></span>
                     
                 </div>
             </div>
@@ -914,20 +914,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>MAC Address</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.MACAddress"> </span> 
                                   
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7 "><p-checkbox name="group1" value=" Work List" label=" Work List"></p-checkbox></span>
+                    <span class="ui-g-7 "><p-checkbox  [(ngModel)]="device.nwInfo.workList" value=" Work List" label=" Work List"></p-checkbox></span>
                  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>AV Type</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.AVType"> </span> 
                 </div>
             </div>
         </div>
@@ -935,7 +935,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>IP Address</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.IPAddress"> </span> 
                                   
                 </div>
             </div>
@@ -947,7 +947,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Firewall</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.Firewall"> </span> 
                 </div>
             </div>
         </div>
@@ -955,20 +955,20 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Subnet Mask</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.subnetMask"> </span> 
                                   
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-5 "><label>File Locationg</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-5 "><label>File Location</label></span>
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.fileLocation"> </span> 
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Comments</label></span>
-                    <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize"></textarea> </span> 
+                    <span class="ui-g-7"><textarea pInputTextarea [(ngModel)]="device.nwInfo.Comments" autoResize="autoResize"></textarea> </span> 
                 </div>
             </div>
         </div>
@@ -976,14 +976,14 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Default Gateway</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.defaultGateway"> </span> 
                                   
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Name</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.name"> </span> 
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -994,14 +994,14 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Domain Name</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.domainName"> </span> 
                                   
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Date</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span> 
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.nwInfo.Date"></p-calendar> </span> 
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -1012,7 +1012,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>DNS Server</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.DNSServer"> </span> 
                                   
                 </div>
             </div>
@@ -1028,14 +1028,14 @@
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7"><p-checkbox name="group1" value=" Uses DHCP" label=" Uses DHCP"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox value=" Uses DHCP" [(ngModel)]="device.nwInfo.UsesDHCP" label=" Uses DHCP"></p-checkbox></span>
                                  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Backup Scheduled</label></span>
-                    <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span> 
+                    <span class="ui-g-7"><p-calendar  [showIcon]="true" [(ngModel)]="device.nwInfo.backupScheduled"></p-calendar> </span> 
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -1045,14 +1045,14 @@
         <div class="ui-g ui-fluid device_info">
             <div class="ui-g-12 ui-md-4">
                 <div>
-                    <span class="ui-g-7"><p-checkbox name="group1" value="DNS Required" label="DNS Required"></p-checkbox></span>
+                    <span class="ui-g-7"><p-checkbox  [(ngModel)]="device.nwInfo.DNSRequired" value="DNS Required" label="DNS Required"></p-checkbox></span>
                                  
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>Backup Type</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.backupType"> </span> 
                 </div>
             </div>
             <div class="ui-g-12 ui-md-4">
@@ -1071,7 +1071,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>OS</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.OS"> </span> 
                 </div>
             </div>
         </div>
@@ -1079,7 +1079,7 @@
             <div class="ui-g-12 ui-md-4">
                 <div>
                     <span class="ui-g-5 "><label>OS Version</label></span>
-                    <span class="ui-g-7"><input type="text" pInputText > </span> 
+                    <span class="ui-g-7"><input type="text" pInputText [(ngModel)]="device.nwInfo.OSVersion"> </span> 
                 </div>
             </div>
         </div>
