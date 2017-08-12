@@ -25,3 +25,9 @@ a{
 .pointer {
     cursor: pointer;
 }
+.ui-fieldset{
+    margin-bottom: 16px;
+}
+.ui-fieldset .ui-fieldset-content {
+    padding: 0px!important;
+}
