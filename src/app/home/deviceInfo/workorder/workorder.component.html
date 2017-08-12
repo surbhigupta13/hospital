@@ -175,6 +175,9 @@
                         <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Repeat of WO"></p-dropdown>  </span>    
                     </div>
                 </p-fieldset>
+                <div class="ui-g-4 fr ">
+                    <button pButton type="button" label="Save"></button>
+                </div>
             </div>
             
         </div>
@@ -182,6 +185,128 @@
     <p-tabPanel header="Time stamps">
     </p-tabPanel>
     <p-tabPanel header="Time">
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-12">
+                <p-dataTable >
+                    <p-column field="vin" header="Labour id"></p-column>
+                    <p-column field="year" header="Tech/Vendor"></p-column>
+                    <p-column field="brand" header="Service worked"></p-column>
+                    <p-column field="color" header="Hrs worked"></p-column>
+                    <p-column field="color" header="Hrs type"></p-column>
+                    <p-column field="color" header="Work Performed"></p-column>
+                    <p-column field="color" header="Down"></p-column>
+                    <p-column field="color" header="Up"></p-column>
+                </p-dataTable>
+            </div>
+        </div>
+        
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-6">
+                <p-fieldset legend="Time entry detail" class="mb">
+                    <div>
+                        <span class="ui-g-5 "><label>WO#</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Date Requested</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true" [showTime]="true"></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Date Completed</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true" [showTime]="true"></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Hours Type</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Hours Type"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Labour Type</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Labour Type"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Technicial Name</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Technicial Name"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Service Begin</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true" ></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Service End</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true" ></p-calendar>  </span>    
+                    </div>
+                </p-fieldset>
+            </div>
+            <div class="ui-g-12 ui-md-6">
+                <p-fieldset legend="Hours Worked" class="mb">
+                    <div>
+                        <span class="ui-g-5 "><label>Service Hours</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Less Non-WO Time</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>WO Time</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-12 "><p-checkbox   value="Equipment down during work" label="Equipment down during work"></p-checkbox> </span>
+                    </div>
+                    <div>
+                        <span class="ui-g-12 "><p-checkbox   value="Equipment back after work" label="Equipment back after work"></p-checkbox> </span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Work Performed</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Work Performed"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Other PO</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Labour Rate</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Hospital PO#</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Comments</label></span>
+                        <span class="ui-g-7 "><textarea pInputTextarea  autoResize="autoResize"></textarea></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Bill to Entity</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Bill to Entity"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Bill to Department</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Bill to Department"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Created on</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true" ></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Created by</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Modified on</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true" ></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Modified by</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                </p-fieldset>
+                <div class="ui-g-4 fr ">
+                    <button pButton type="button" label="Save"></button>
+                </div>
+            </div>
+        </div>
     </p-tabPanel>
     <p-tabPanel header="Parts">
     </p-tabPanel>

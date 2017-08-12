@@ -12,6 +12,7 @@ import {InputTextareaModule} from 'primeng/primeng';
 import {CalendarModule} from 'primeng/primeng';
 import { FormsModule } from '@angular/forms';
 import {FieldsetModule} from 'primeng/primeng';
+import {DataTableModule,SharedModule} from 'primeng/primeng';
 @NgModule({
   declarations: [
     InfoComponent,
@@ -29,7 +30,9 @@ import {FieldsetModule} from 'primeng/primeng';
     CalendarModule,
     FormsModule,
     InputTextareaModule,
-    FieldsetModule
+    FieldsetModule,
+    DataTableModule,
+    SharedModule
   ],
   exports:[
    InfoComponent,
