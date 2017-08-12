@@ -1,1 +1,165 @@
-<h1>fkjfjf</h1>
+<p-tabView>
+    <p-tabPanel header="Primary detail">
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-6">
+                <p-fieldset legend="General information" >
+                    <div>
+                        <span class="ui-g-5 "><label>Entity Id</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Entity Id"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Work Order #</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Original WO#</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Control#</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Control"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-12 "><p-checkbox  value="Cost Center only" label="Cost Center only" ></p-checkbox></span>
+                         
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>WO Reference</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                </p-fieldset>
+                <p-fieldset legend="Request information" >
+                    <div>
+                        <span class="ui-g-5 "><label>Request Date & Time</label></span>
+                        <span class="ui-g-7 "><p-calendar  [showIcon]="true" [showTime]="true"></p-calendar></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Requested by</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Requested by"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Phone Number</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Email address</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>WO Received via</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="WO Received via"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>WO Priority</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="WO Priority"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>WO Type</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="WO Type"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Tech Assigned</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Tech Assigned"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Vendor Assigned</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Vendor Assigned"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Work Requested</label></span>
+                        <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize" ></textarea>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Equipment Status</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Equipment Status"></p-dropdown>  </span>    
+                    </div>
+                </p-fieldset>
+            </div>
+            <div class="ui-g-12 ui-md-6">
+                <p-fieldset legend="Work Performed Information" >
+                    <div>
+                        <span class="ui-g-5 "><label>Problem/Failure</label></span>
+                        <span class="ui-g-7 "><p-dropdown   [autoWidth] ="false"  placeholder="Problem/Failure"></p-dropdown></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>WO Risk</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="WO Risk"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Equip Location</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Equip Room No</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Work Performed</label></span>
+                        <span class="ui-g-7"><textarea pInputTextarea autoResize="autoResize" ></textarea>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Response Time Hrs</label></span>
+                        <span class="ui-g-7"><p-calendar  [timeOnly]="true"></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Downtime Hrs</label></span>
+                        <span class="ui-g-7"><p-calendar  [timeOnly]="true"></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Hours to 1st time entry</label></span>
+                        <span class="ui-g-7"><p-calendar  [timeOnly]="true"></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-12 label_heading"><label>Electrical Safety</label></span>                   
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Ground (resistance) Ohms</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Leakage (current) microA</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Battery last change date</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Battery next change date</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true"></p-calendar> </span>    
+                    </div>
+                </p-fieldset>
+                <p-fieldset legend="Completion information" >
+                    <div>
+                        <span class="ui-g-5 "><label>Date & time completion</label></span>
+                        <span class="ui-g-7 "><p-calendar  [showIcon]="true" [showTime]="true"></p-calendar></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>WO Status</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="WO Status"></p-dropdown>  </span>    
+                    </div>
+                </p-fieldset>
+                
+            </div>
+        </div>
+        
+    </p-tabPanel>
+    <p-tabPanel header="Other detail">
+    </p-tabPanel>
+    <p-tabPanel header="Time stamps">
+    </p-tabPanel>
+    <p-tabPanel header="Time">
+    </p-tabPanel>
+    <p-tabPanel header="Parts">
+    </p-tabPanel>
+    <p-tabPanel header="PM Procedure">
+    </p-tabPanel>
+    <p-tabPanel header="Test Equipment">
+    </p-tabPanel>
+    <p-tabPanel header="Equipment info">
+    </p-tabPanel>
+    <p-tabPanel header="Attachment">
+    </p-tabPanel>
+    <p-tabPanel header="Change Logs">
+    </p-tabPanel>
+</p-tabView>

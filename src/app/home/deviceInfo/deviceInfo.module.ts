@@ -11,6 +11,7 @@ import {CheckboxModule} from 'primeng/primeng';
 import {InputTextareaModule} from 'primeng/primeng';
 import {CalendarModule} from 'primeng/primeng';
 import { FormsModule } from '@angular/forms';
+import {FieldsetModule} from 'primeng/primeng';
 @NgModule({
   declarations: [
     InfoComponent,
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     CheckboxModule,
     CalendarModule,
     FormsModule,
-    InputTextareaModule
+    InputTextareaModule,
+    FieldsetModule
   ],
   exports:[
    InfoComponent,
