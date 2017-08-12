@@ -147,6 +147,37 @@
         
     </p-tabPanel>
     <p-tabPanel header="Other detail">
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-6">
+                <p-fieldset legend="Details" class="mb">
+                    <div>
+                        <span class="ui-g-5 "><label>Equip Tech Level</label></span>
+                        <span class="ui-g-7 "><p-dropdown   [autoWidth] ="false"  placeholder="Equip Tech Level"></p-dropdown></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Equip Physical Condition</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Equip Physical Condition"></p-dropdown>  </span>    
+                    </div>
+                </p-fieldset>
+                <p-fieldset legend="Sent out for service info" class="mb">
+                    <div>
+                        <span class="ui-g-12 "><p-checkbox   value="Sent out for service" label="Sent out for service"></p-checkbox> </span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Estimated return</label></span>
+                        <span class="ui-g-7"><p-calendar  [showIcon]="true" ></p-calendar>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-12"><p-checkbox   value="Repeat WO" label="Repeat WO"></p-checkbox> </span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Repeat of WO#</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Repeat of WO"></p-dropdown>  </span>    
+                    </div>
+                </p-fieldset>
+            </div>
+            
+        </div>
     </p-tabPanel>
     <p-tabPanel header="Time stamps">
     </p-tabPanel>
