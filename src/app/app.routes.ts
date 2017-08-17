@@ -10,6 +10,7 @@ import { MasterComponent } from './home/creation/master/master.component';
 import { UserComponent } from './home/creation/user/user.component';
 import { InfoComponent } from './home/deviceInfo/info/info.component';
 import { WorkorderComponent } from './home/deviceInfo/workorder/workorder.component';
+import { PurchaseorderComponent } from './home/deviceInfo/purchaseorder/purchase.component';
 import { AuthGuard } from './auth/auth.guard';
 
 // Route Configuration
@@ -33,7 +34,8 @@ export const routes: Routes = [
         { path: 'master', component: MasterComponent },
         { path: 'user', component: UserComponent },
         { path: 'info', component: InfoComponent},
-        { path: 'workorder', component: WorkorderComponent}
+        { path: 'workorder', component: WorkorderComponent},
+        { path: 'purchaseorder', component: PurchaseorderComponent}
     ]
   }
     // Add dog routes form a different file

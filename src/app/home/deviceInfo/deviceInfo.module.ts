@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {InfoComponent} from './info/info.component';
 import {WorkorderComponent} from './workorder/workorder.component';
+import {PurchaseorderComponent} from './purchaseorder/purchase.component';
 import {TabViewModule} from 'primeng/primeng';
 import {PanelModule} from 'primeng/primeng';
 import {ButtonModule} from 'primeng/primeng';
@@ -16,7 +17,8 @@ import {DataTableModule,SharedModule} from 'primeng/primeng';
 @NgModule({
   declarations: [
     InfoComponent,
-    WorkorderComponent
+    WorkorderComponent,
+    PurchaseorderComponent
     
   ],
   imports: [
