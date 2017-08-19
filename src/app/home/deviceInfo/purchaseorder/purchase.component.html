@@ -2,10 +2,412 @@
     <p-tabPanel header="Browse">
     </p-tabPanel>
     <p-tabPanel header="PO Details">
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-6">
+                <p-fieldset legend="PO Header Information" class="mb">
+                    <div>
+                        <span class="ui-g-5 "><label>PO Site</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="PO Site"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Request #</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>PO#</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>PO Status</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText >  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Vendor</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Vendor"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Non Prime Vendor Justification</label></span>
+                        <span class="ui-g-7"><textarea pInputTextarea  autoResize="autoResize"></textarea>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Ship To</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Ship To"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Requested by</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Ship To"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Date Required</label></span>
+                        <span class="ui-g-7 "><p-calendar  [showIcon]="true" ></p-calendar></span>
+                    </div>
+                </p-fieldset>
+                <p-fieldset legend="PO Amount Information" class="mb">
+                    <div>
+                        <span class="ui-g-5 "><label>List Items Amount</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Projected Shipping</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Projected Sales Tax</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Total PO Amount</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                   
+                </p-fieldset>
+                <p-fieldset legend="Other Information" class="mb">
+                    <div>
+                        <span class="ui-g-5 "><label>Invoicing Complete</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Transmitted</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Xmitted on</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                </p-fieldset>
+            </div>
+            <div class="ui-g-12 ui-md-6">
+                <p-fieldset legend="Comments To Print On Purchase Order" class="mb">
+                    <div>
+                        <!-- <span class="ui-g-5 "><label>Non Prime Vendor Justification</label></span> -->
+                        <span class="ui-g-12"><textarea pInputTextarea  autoResize="autoResize"></textarea>  </span>
+                    </div>
+                    
+                </p-fieldset>
+                <p-fieldset legend="Comments (This will show on the printed copy of PO)" class="mb">
+                    <div>
+                        <!-- <span class="ui-g-5 "><label>Non Prime Vendor Justification</label></span> -->
+                        <span class="ui-g-12"><textarea pInputTextarea  autoResize="autoResize"></textarea>  </span>
+                    </div>
+                    
+                </p-fieldset>
+                <p-fieldset legend="User Defined Fields" class="mb">
+                    <div>
+                        <span class="ui-g-5 "><label>User Defined 1</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>User Defined 2</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>User Defined 3</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                   
+                </p-fieldset>
+                <p-fieldset legend="Record Information" class="mb">
+                    <div>
+                        <span class="ui-g-5 "><label>Created On</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Created By</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Modified By</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Modified On</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Approved By</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                   
+                </p-fieldset>
+                
+                <div class="ui-g-4 fr ">
+                    <button pButton type="button" label="Save"></button>
+                </div>
+                <div class="ui-g-4 fr ">
+                    <button pButton type="button" label="Cancel"></button>
+                </div>
+            </div>
+        </div>
     </p-tabPanel>
     <p-tabPanel header="Line Items">
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-12">
+                <p-dataTable >
+                    <p-header>PO Line Items</p-header>
+                    <p-column field="vin" header="Request #"></p-column>
+                    <p-column field="year" header="Order"></p-column>
+                    <p-column field="brand" header="Qty"></p-column>
+                    <p-column field="color" header="# Received"></p-column>
+                    <p-column field="color" header="# Returned"></p-column>
+                    <p-column field="color" header="Unit"></p-column>
+                    <p-column field="color" header="PO Cost"></p-column>
+                    <p-column field="color" header="Ext PO Cost"></p-column>
+                    <p-column field="color" header="Invoiced Amt"></p-column>
+                    <p-column field="color" header="Part #"></p-column>
+                    <p-column field="color" header="Item DEscription"></p-column>
+                </p-dataTable>
+            </div>
+        </div>
+        <p-fieldset legend="Item Details" class="mb">
+            <div class="ui-g ui-fluid device_info">
+                <div class="ui-g-12 ui-md-6">
+                    <div class="ui-g ui-fluid">
+                        <div class="ui-g-12 ui-md-6 p0">
+                            <div>
+                                <span class="ui-g-5 "><label>Request #</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6 p0">
+                             <div>
+                                <span class="ui-g-5 "><label>Line #</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <span class="ui-g-5 "><label>Item Status</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    
+                    <div>
+                        <span class="ui-g-5 "><label>Cost Ctr</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Cost Ctr"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Account Code Cat</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Account Code Cat"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Account Code </label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Account Code"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Option Description </label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Option Description"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Part #</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Description</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div >
+                        <div class="ui-g-12 ui-md-7 p0">
+                            <div>
+                                <span class="ui-g-5 "><label>Unit of Measure</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-5">
+                             <button class="ui-button-secondary" pButton type="button" label="Toggle Billable"></button>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="ui-g-12 ui-md-7 p0">
+                            <div>
+                                <span class="ui-g-4 "><label>Qty/Qty to WO</label></span>
+                                <span class="ui-g-4"><input type="text" pInputText > </span>
+                                <span class="ui-g-4"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-5 p0">
+                            <span class="ui-g-5 "><label>Manual Billable</label></span>
+                            <span class="ui-g-7"><input type="text" pInputText > </span>    
+                        </div>
+                    </div>
+                    <div >
+                        <div class="ui-g-12 ui-md-7 p0">
+                            <div>
+                                <span class="ui-g-5 "><label>Unit Cost</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-5">
+                             <button class="ui-button-secondary" pButton type="button" label="Set sch billable= NO"></button>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="ui-g-12 ui-md-7 p0">
+                            <div>
+                                <span class="ui-g-5 "><label>Extened Cost</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-5">
+                            <div>
+                                <span class="ui-g-5 "><label>Set sch billable</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Item Comments</label></span>
+                        <span class="ui-g-7"><textarea pInputTextarea  autoResize="autoResize"></textarea>  </span>    
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-6">
+                    <div class="ui-g ui-fluid">
+                        <div class="ui-g-12 ui-md-6 p0">
+                            <div>
+                                <span class="ui-g-5 "><label>WO #</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6 p0">
+                             <div>
+                                <span class="ui-g-5 "><label>Control #</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-g ui-fluid">
+                        <div class="ui-g-12 ui-md-6 p0">
+                            <div>
+                                <span class="ui-g-12"><textarea pInputTextarea  autoResize="autoResize"></textarea></span>
+                                  
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6 p0">
+                             <div>
+                                <span class="ui-g-12"><textarea pInputTextarea  autoResize="autoResize"></textarea></span>   
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Entity </label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Entity"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Entity Cost Ctr </label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Entity Cost Ctr"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Facility PO #</label></span>
+                        <span class="ui-g-7"><input type="text" pInputText > </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Bill To Entity</label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Bill To Entity"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Bill To Department </label></span>
+                        <span class="ui-g-7"><p-dropdown   [autoWidth] ="false"  placeholder="Bill To Department"></p-dropdown>  </span>    
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Created On</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Created By</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Modified By</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div>
+                        <span class="ui-g-5 "><label>Modified On</label></span>
+                        <span class="ui-g-7 "><input type="text" pInputText ></span>
+                    </div>
+                    <div >
+                        <div class="ui-g-12 ui-md-7 p0">
+                            <div>
+                                <span class="ui-g-5 "><label>Xmitted/ Xmit On</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-5">
+                            <div>
+                                <span class="ui-g-5 "><label>Billed On</label></span>
+                                <span class="ui-g-7"><input type="text" pInputText > </span>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-g-4 fr ">
+                        <button pButton type="button" label="Add Item"></button>
+                    </div>
+                    <div class="ui-g-4 fr ">
+                        <button pButton type="button" label="Delete Item"></button>
+                    </div>
+                    <div class="ui-g-4 fr ">
+                        <button pButton type="button" label="Edit Item"></button>
+                    </div>
+                </div>
+            </div>
+        </p-fieldset>
     </p-tabPanel>
     <p-tabPanel header="Receiving">
+        <div class="ui-g ui-fluid device_info">
+            <div class="ui-g-12 ui-md-12">
+                <p-dataTable >
+                    <p-header>PO Receipt Headers</p-header>
+                    <p-column field="vin" header="PO #"></p-column>
+                    <p-column field="year" header="Request #"></p-column>
+                    <p-column field="brand" header="Parking Slip/FSR #"></p-column>
+                    <p-column field="color" header="Receipt Date"></p-column>
+                    <p-column field="color" header="Received By"></p-column>
+                    <p-column field="color" header="Receipt Amt"></p-column>
+                    <p-column field="color" header="Xmitted"></p-column>
+                    <p-column field="color" header="Xmit On"></p-column>
+                    <p-column field="color" header="Sort"></p-column>
+                </p-dataTable>
+            </div>
+        </div>
+        <div>
+            <div class="ui-g-6  ">
+                <button pButton type="button" label="Add Receipt"></button>
+            </div>
+            <div class="ui-g-6  ">
+                <button pButton type="button" label="Delete Receipt"></button>
+            </div>
+        </div>
+        <div class="">
+            <div class="ui-g-12 ui-md-12">
+                <p-dataTable >
+                    <p-header>PO Receipt Line Items(for selected receipt in grid above)</p-header>
+                    
+                </p-dataTable>
+            </div>
+        </div>
+        <div>
+            <div class="ui-g-6  ">
+                <button pButton type="button" label="Auto Receive All PO Line Items"></button>
+            </div>
+            <div class="ui-g-6  ">
+                <button pButton type="button" label="Return Items"></button>
+            </div>
+        </div>
+        <div class="">
+            <div class="ui-g-12 ui-md-12">
+                <p-dataTable >
+                    <p-header>PO Line Items -Read Only(Double-click an item to add it to current receipt)</p-header>
+                    <p-column field="vin" header="Order"></p-column>
+                    <p-column field="year" header="Qty"></p-column>
+                    <p-column field="brand" header="#Received"></p-column>
+                    <p-column field="color" header="#Returned"></p-column>
+                    <p-column field="color" header="Unit"></p-column>
+                    <p-column field="color" header="PO Cost"></p-column>
+                    <p-column field="color" header="Ext PO Cost"></p-column>
+                    <p-column field="color" header="Invoiced Amt"></p-column>
+                    <p-column field="color" header="Part #"></p-column>
+                    <p-column field="color" header="Item DEscription"></p-column>
+                </p-dataTable>
+            </div>
+        </div>
     </p-tabPanel>
     <p-tabPanel header="Invoices/ Payments/ Acct Information">
     </p-tabPanel>
