@@ -11,13 +11,14 @@ import { UserComponent } from './home/creation/user/user.component';
 import { InfoComponent } from './home/deviceInfo/info/info.component';
 import { WorkorderComponent } from './home/deviceInfo/workorder/workorder.component';
 import { PurchaseorderComponent } from './home/deviceInfo/purchaseorder/purchase.component';
+import { DefaultComponent } from './home/default';
 import { AuthGuard } from './auth/auth.guard';
 
 // Route Configuration
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: '/home/default',
     pathMatch: 'full'
   },
   {
@@ -35,7 +36,8 @@ export const routes: Routes = [
         { path: 'user', component: UserComponent },
         { path: 'info', component: InfoComponent},
         { path: 'workorder', component: WorkorderComponent},
-        { path: 'purchaseorder', component: PurchaseorderComponent}
+        { path: 'purchaseorder', component: PurchaseorderComponent},
+        { path: '', component: DefaultComponent}
     ]
   }
     // Add dog routes form a different file

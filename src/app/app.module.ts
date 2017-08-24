@@ -11,6 +11,7 @@ import { AuthGuard } from './auth/auth.guard';
 import {SharedModule} from './shared/shared.module';
 import {CreationModule} from './home/creation/creation.module';
 import {DeviceInfoModule} from './home/deviceInfo/deviceInfo.module';
+import {DefaultModule} from './home/default/default.module';
 
 
 @NgModule({
@@ -24,11 +25,13 @@ import {DeviceInfoModule} from './home/deviceInfo/deviceInfo.module';
     BrowserModule,
     routing,
     SharedModule,
+    DefaultModule,
     CreationModule,
     DeviceInfoModule,
     FormsModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
