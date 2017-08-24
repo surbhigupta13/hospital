@@ -7,10 +7,10 @@
     background-color: #fff;
     box-sizing: border-box;
     padding: 6px;
-    .circle{
-        max-width: 300px;
-        margin: 0px auto;
-    }
+}
+.grd-25 .circle{
+    max-width: 300px;
+    margin: 0px auto;
 }
 .rw-grid{
     max-height: 100%;
